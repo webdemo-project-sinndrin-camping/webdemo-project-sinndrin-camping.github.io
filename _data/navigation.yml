@@ -1,7 +1,16 @@
 # main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "Camping"
+    url: /camping/
 
-  - title: "Sample Navigation Link 2"
+  - title: "Unterkünfte"
+    url: /unterkuenfte/
+
+  - title: "Aktivitäten"
+    url: /aktivitaeten/
+
+  - title: "Buchen"
+    url: /buchen/
+
+  - title: "<i class='fa fa-map-marker' aria-hidden='true'></i>"
     url: /
