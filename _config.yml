@@ -6,12 +6,12 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
+locale                   : "de"
+title                    : "Sörälgens Camping"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Sörälgens Camping"
+description              : "Sörälgens Camping ist ein unabhängiger Campingzlatz. Er liegt direkt am schönen, 14 km langen See Sörälgen, im Naturschutzgebiet Hökhöjden, 3 km nordöstlich von Hällefors, Bergslagen."
+url                      : "" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -77,12 +77,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Sörälgens Camping"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  bio              : "Sörälgens Camping ist ein unabhängiger Campingplatz. Er liegt direkt am schönen, 14 km langen See Sörälgen, im Naturschutzgebiet Hökhöjden, 3 km nordöstlich von Hällefors, Bergslagen."
+  location         : "Sörälgen, Schweden"
+  email            : info@soralgen.se
+  uri              : "http://soralgen.se"
   bitbucket        :
   codepen          :
   dribbble         :
