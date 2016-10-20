@@ -1,7 +1,79 @@
 /* ==========================================================================
-   CUSTOM RULES FOR tzipeergruppesued.tzi.ch
+   CUSTOM RULES FOR Sörälgen Camping
    ========================================================================== */
 
 /*
-  section title
-  ========================================================================== */
+   Type
+   ========================================================================== */
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-size-7 {
+  font-size: $type-size-7;
+}
+
+/*
+   purecss.io config
+   ========================================================================== */
+/* Padding & margin for purecss boxes */
+/* 1em everywhere */
+.l-box {
+    padding: 1em;
+}
+/* RIGHT padding only */
+.rp {
+  padding: 0;
+  padding-right: 1em;
+}
+/* LEFT padding only */
+.lp {
+  padding: 0;
+  padding-left: 1em;
+}
+/* BOTTOM margin only */
+.mb-large {
+  margin-bottom: 2em;
+}
+
+/*
+   Home Container
+   ========================================================================== */
+ /* Campingplatz */
+ #section-campingplatz {
+   background-image: url('/images/home/Section_Campingplatz_Boot.jpg');
+   background-size: cover;
+   text-align: center;
+
+   h2 {
+     margin-top: 0.5em;
+     border-bottom: 0;
+     font-size: $type-size-5;
+   }
+ }
+
+ .overlay-black {
+   background-color: #000;
+   background-color: rgba(0, 0, 0, 0.7);
+   color: white;
+   padding: 1em;
+   margin: 2em 0;
+   position: relative;
+
+   p {
+     font-size: $type-size-7;
+
+     a {
+       position: absolute;
+       bottom: 2em;
+       left: 0;
+       width: 100%;
+       text-transform: uppercase;
+       color: white;
+       text-decoration: underline;
+       font-weight: bold;
+     }
+   }
+   p:last-child {
+     padding-top: 1em;
+   }
+ }
