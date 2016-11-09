@@ -2,6 +2,8 @@
    CUSTOM RULES FOR Sörälgen Camping
    ========================================================================== */
 
+@import "variables";
+
 /*
    Type
    ========================================================================== */
@@ -10,6 +12,19 @@
 }
 .text-size-7 {
   font-size: $type-size-7;
+}
+
+/*
+   Lists
+   ========================================================================== */
+ /* Reset list styling to none */
+.blank-list-style {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 0;
+  }
 }
 
 /*
@@ -34,6 +49,48 @@
 .mb-large {
   margin-bottom: 2em;
 }
+
+/*
+   Footer
+   ========================================================================== */
+ .page__footer {
+   /* a underline */
+   a {
+     text-decoration: underline;
+   }
+
+   /* center columns */
+   .pure-u-1 {
+     text-align: center;
+   }
+
+   /* Social Media Icons */
+   a.footer-icon {
+     margin: 0 1em;
+     text-decoration: none;
+
+     &:hover {
+       text-decoration: none;
+     }
+
+     .fa {
+       color: $body-color;
+     }
+   }
+
+   /* Grayscale Images
+      Source: http://stackoverflow.com/a/8612047/3068252 */
+   img.grayscale {
+     filter: gray; /* IE6-9 */
+     filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+
+     &:hover {
+       filter: none;
+       -webkit-filter: grayscale(0);
+     }
+   }
+ }
 
 /*
    Home Container
