@@ -96,8 +96,18 @@
    Home Container
    ========================================================================== */
  /* Campingplatz */
- #section-campingplatz {
-   background-image: url('/images/home/Section_Campingplatz_Boot.jpg');
+ .home-section {
+   /* invert icons */
+   .invert {-webkit-filter: invert(100%); filter: invert(100%);}
+   &#section-campingplatz {
+     background-image: url('/images/home/Section_Campingplatz_Boot.jpg');
+   }
+   &#section-unterkunftsmoeglichkeiten {
+     background-image: url('/images/home/Section_Unterkuenfte_Saisonplatz.jpg');
+   }
+   &#section-aktivitaeten {
+     background-image: url('/images/home/Section_Aktivitaeten_Ausflug.jpg');
+   }
    background-size: cover;
    text-align: center;
 
@@ -106,31 +116,45 @@
      border-bottom: 0;
      font-size: $type-size-5;
    }
- }
 
- .overlay-black {
-   background-color: #000;
-   background-color: rgba(0, 0, 0, 0.7);
-   color: white;
-   padding: 1em;
-   margin: 2em 0;
-   position: relative;
-
-   p {
-     font-size: $type-size-7;
-
-     a {
-       position: absolute;
-       bottom: 2em;
-       left: 0;
-       width: 100%;
-       text-transform: uppercase;
+   .overlay {
+     &.black {
        color: white;
-       text-decoration: underline;
-       font-weight: bold;
+       background-color: #000;
+       background-color: rgba(0, 0, 0, 0.7);
+
+       a {
+         color: white;
+       }
      }
-   }
-   p:last-child {
-     padding-top: 1em;
+     &.white {
+       color: black;
+       background-color: #fff;
+       background-color: rgba(255, 255, 255, 0.7);
+
+       a {
+         color: black;
+       }
+     }
+     padding: 1em;
+     margin: 2em 0;
+     position: relative;
+
+     p {
+       font-size: $type-size-7;
+
+       a {
+         position: absolute;
+         bottom: 2em;
+         left: 0;
+         width: 100%;
+         text-transform: uppercase;
+         text-decoration: underline;
+         font-weight: bold;
+       }
+     }
+     p:last-child {
+       padding-top: 1em;
+     }
    }
  }
