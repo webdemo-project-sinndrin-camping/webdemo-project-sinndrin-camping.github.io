@@ -10,6 +10,9 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.text-underline {
+  text-decoration: underline;
+}
 .text-size-7 {
   font-size: $type-size-7;
 }
@@ -25,6 +28,86 @@
   li {
     margin-bottom: 0;
   }
+}
+
+/*
+   Masthead
+   ========================================================================== */
+@mixin masthead-text-color {
+  color: $weiss;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #000;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+.masthead {
+  border-bottom: 0;
+  background-color: #d3d5d2;
+  background-image: url('/images/home/HeaderBild_Soralgen.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  /* begin resize container according to background image
+     Source: http://stackoverflow.com/a/22211990/3068252 */
+  position: relative;
+  background-size: contain;
+  height: 0;
+  min-height: 170px; /* breakpoint below small to have enough space for text content */
+  padding-top: 46.875%; /* (img-height / img-width * container-width) */
+                /* (480 / 1024 * 100) */
+  /* Source: http://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size#comment49662468_22211990 */
+  .masthead__inner-wrap {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+  /* end resize container according to background image */
+
+  .lang-selector {
+
+    li {
+      @include masthead-text-color;
+      display: inline-block;
+      padding: 0 1em;
+
+      @include breakpoint($small) {
+        display: block;
+        padding: inherit;
+        font-size: $type-size-4;
+      }
+      @include breakpoint($medium) {
+        margin-bottom: 0.75em;
+        &:first-of-type {
+          padding-top: 1em;
+        }
+      }
+      @include breakpoint($medium-wide) {
+        margin-bottom: 0.75em;
+        &:first-of-type {
+          padding-top: 2em;
+        }
+      }
+      @include breakpoint($large) {
+        margin-bottom: 0.75em;
+        &:first-of-type {
+          padding-top: 3em;
+        }
+      }
+    }
+  }
+}
+.greedy-nav {
+  background: 0;
+
+   a {
+     @include masthead-text-color;
+   }
+
+   .hidden-links {
+     background: $gray;
+     border: 1px solid $dark-gray;
+   }
 }
 
 /*
