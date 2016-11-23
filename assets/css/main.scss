@@ -41,6 +41,9 @@
 @import "vendor/slick/slick";
 @import "vendor/slick/slick-theme";
 
+// jquery-modal from https://github.com/kylefox/jquery-modal
+@import "plugins/jquery.modal";
+
 @import "custom"; // custom rules
 
 @import "print";

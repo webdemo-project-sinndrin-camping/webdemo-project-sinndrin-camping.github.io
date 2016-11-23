@@ -20,6 +20,34 @@ $(document).ready(function(){
     dots: true,
     lazyLoad: 'ondemand',
   });
+  // modals
+  $('.slick-home-campingplatz-modal').slick({
+    accessibility: true,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-home-campingplatz-modal').slick('slickPause');
+  $('.slick-home-infrastruktur-modal').slick({
+    accessibility: true,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-home-infrastruktur-modal').slick('slickPause');
+  $('.slick-home-gegend-modal').slick({
+    accessibility: true,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-home-gegend-modal').slick('slickPause');
 
   // Sticky footer
   var bumpIt = function() {

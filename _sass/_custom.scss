@@ -230,11 +230,12 @@
          -webkit-transition: all 1s;
        }
        &:before {
-          content: attr(data-content); // overlay content
+          content: attr(data-content) '\a \1F441' ; // overlay content
+          white-space: pre;
           width: 100%;
           color: #fff;
           z-index: 1;
-          bottom: 50%;
+          top: 45%;
           left: 0px;
           text-align: center;
         }

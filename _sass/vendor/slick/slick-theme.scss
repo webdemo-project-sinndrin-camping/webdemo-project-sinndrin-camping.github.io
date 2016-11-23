@@ -13,8 +13,8 @@ $slick-loader-path: "./vendor/slick/" !default;  // ! customized directory by rs
 $slick-arrow-color: white !default;
 $slick-dot-color: white !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2190" !default;
-$slick-next-character: "\2192" !default;
+$slick-prev-character: "\3008" !default;
+$slick-next-character: "\3009" !default;
 $slick-dot-character: "\2022" !default;
 $slick-dot-size: 15px !default;
 $slick-opacity-default: 1 !default;
@@ -64,8 +64,8 @@ $slick-opacity-not-active: 0.5 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 60px;
+    width: 50px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
@@ -101,13 +101,16 @@ $slick-opacity-not-active: 0.5 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 25px;
+    z-index: 100;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: 25px;
     }
     &:before {
+        font-weight: bold;
         content: $slick-prev-character;
+        font-size: 50px;
         [dir="rtl"] & {
             content: $slick-next-character;
         }
@@ -115,13 +118,16 @@ $slick-opacity-not-active: 0.5 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 25px;
+    z-index: 100;
     [dir="rtl"] & {
-        left: -25px;
+        left: 25px;
         right: auto;
     }
     &:before {
+        font-weight: bold;
         content: $slick-next-character;
+        font-size: 50px;
         [dir="rtl"] & {
             content: $slick-prev-character;
         }
