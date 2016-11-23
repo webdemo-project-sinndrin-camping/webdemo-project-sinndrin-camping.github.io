@@ -10,6 +10,9 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.text-lowercase {
+  text-transform: lowercase;
+}
 .text-underline {
   text-decoration: underline;
 }
@@ -100,10 +103,31 @@
 .greedy-nav {
   background: 0;
 
-   a {
+   .visible-links a {
      @include masthead-text-color;
+
+     /* set hover styles */
+     &:hover {
+       color: $body-color;
+       @extend .text-underline;
+     }
+
+     &.btn-masthead {
+       /* extend btn-masthead Buchen with button classes */
+       @extend .btn;
+       @extend .btn--inverse;
+       @extend .text-uppercase;
+
+       text-decoration: none; /* remove white custom undline on hover from button */
+       font-size: $type-size-5; /* reset font size to masthead default */
+     }
+     /* remove gray default undline on hover from navigation entries */
+     &::before {
+           height: 0;
+     }
    }
 
+   /* set styles on dropdown on small screens */
    .hidden-links {
      background: $gray;
      border: 1px solid $dark-gray;
