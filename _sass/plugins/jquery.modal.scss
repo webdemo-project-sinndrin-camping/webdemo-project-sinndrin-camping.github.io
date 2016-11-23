@@ -26,6 +26,9 @@
   position: relative;
   z-index: 200;
   max-width: 930px;
+  &.modal-unterkuenfte {
+    max-width: 495px;
+  }
   box-sizing: border-box;
   width: 90%;
   background: #fff;

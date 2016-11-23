@@ -1,0 +1,240 @@
+---
+layout: splash
+permalink: /unterkuenfte/
+---
+
+{% include base_path %}
+
+<!-- start section Unterkunftsmöglichkeiten -->
+<h1 class="text-center text-uppercase">Un&shy;ter&shy;kunfts&shy;mög&shy;lich&shy;kei&shy;ten</h1>
+
+<p class="text-center">Wir bieten verschiedene Unterkunftsmöglichkeiten an.</p>
+
+<!-- Modal HTML embedded directly into document -->
+<div class="modal-unterkuenfte" id="modal-ferienhaus" style="display:none;">
+  <h1 class="text-center text-uppercase">Ferienhaus Impressionen</h1>
+  <p class="text-center">Lass dich von unserem idyllisch gelegenen Campingplatz bezaubern.</p>
+
+  <div class="slick-unterkuenfte-ferienhaus-modal">
+    {% include slick-caroussel/unterkuenfte-ferienhaus.html %}
+  </div>
+</div>
+<div class="modal-unterkuenfte" id="modal-stugor" style="display:none;">
+  <h1 class="text-center text-uppercase">Stugor Impressionen</h1>
+  <p class="text-center">Lass dich von unserem idyllisch gelegenen Campingplatz bezaubern.</p>
+
+  <div class="slick-unterkuenfte-stugor-modal">
+    {% include slick-caroussel/unterkuenfte-stugor.html %}
+  </div>
+</div>
+<div class="modal-unterkuenfte" id="modal-stellplaetze" style="display:none;">
+  <h1 class="text-center text-uppercase">Stellplätze Impressionen</h1>
+  <p class="text-center">Lass dich von unserem idyllisch gelegenen Campingplatz bezaubern.</p>
+
+  <div class="slick-unterkuenfte-stellplaetze-modal">
+    {% include slick-caroussel/unterkuenfte-stellplaetze.html %}
+  </div>
+</div>
+
+<div id="section-ferienhaus" class="unterkuenfte-section">
+  <img src="/images/icons/Haus.png" />&nbsp;&nbsp;
+  <img src="/images/icons/Tree-black.png" />
+  <h2>Ferienhaus</h2>
+  <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-2 overlay gray">
+      <div class="pure-g">
+        <div class="pure-u-1-2 pure-u-md-1-2">
+          <h3 class="text-uppercase text-left">Details</h3>
+          <p class="text-left"><b>1 Ferienhaus</b><br>für max. 4 Personen</p>
+          <p class="text-left">
+            2 Schlafzimmer<br>
+            (1 Doppelbett,<br>
+            2 Einzelbetten)<br>
+            1 Wohnraum mit Küche<br>
+            1 TV<br>
+            1 Schwedenofen<br>
+            1 grosse Terrasse<br>
+            Parkplatz
+          </p>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-2">
+          <h3 class="text-uppercase text-left">Preise *</h3>
+          <p class="text-left">
+            <b>01.04.-16.06.17 /<br>
+            21.08.-30.10.17</b><br>
+            pro Woche<br>
+            SEK 5'420 (2 Pers.)<br>
+            SEK 6'880 (3-4 Pers.)
+          </p>
+          <p class="text-left">
+            pro Nacht<br>
+            SEK 860 (2 Pers.)<br>
+            SEK 1’470 (3-4 Pers.)
+          </p>
+          <p class="text-left">
+            <b>17.06.-20.08.17</b><br>
+            pro Woche<br>
+            SEK 6'020 (2 Pers.)<br>
+            SEK 7'330 (3-4 Pers.)<br>
+          </p>
+          <p class="text-left">
+            * inkl. Strom, Bettwäsche und Frottier&shy;wäsche. Optionale Endreinigung SEK 910.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+      <a href="#modal-ferienhaus" rel="modal:open" onclick="$('.slick-unterkuenfte-ferienhaus-modal').slick('slickPlay');$('.slick-unterkuenfte-ferienhaus-modal').slick('slickNext');">
+        <div class="slick-unterkuenfte-ferienhaus" data-content="FERIENHAUS">
+          {% include slick-caroussel/unterkuenfte-ferienhaus.html %}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="section-stugor" class="unterkuenfte-section">
+  <img src="/images/icons/Stugor.png" />
+  <h2>Stugor</h2>
+  <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-2">
+      <a href="#modal-stugor" rel="modal:open" onclick="$('.slick-unterkuenfte-stugor-modal').slick('slickPlay');$('.slick-unterkuenfte-stugor-modal').slick('slickNext');">
+        <div class="slick-unterkuenfte-stugor" data-content="STUGOR">
+          {% include slick-caroussel/unterkuenfte-stugor.html %}
+        </div>
+      </a>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 overlay gray">
+      <div class="pure-g">
+        <div class="pure-u-1-2 pure-u-md-1-2">
+          <h3 class="text-uppercase text-left">Details</h3>
+          <p class="text-left">
+            <b>8 Stugor mit 3 Betten</b><br>
+            Tisch, Kochplatte, kleinem<br>
+            Kühlschrank<br>
+            &nbsp;<br>
+            &nbsp;
+          </p>
+          <p class="text-left">
+            <b>2 Stugor mit 4 Betten</b><br>
+            Tisch, Kochplatte,<br>
+            klei&shy;nem Kühlschrank
+          </p>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-2">
+          <h3 class="text-uppercase text-left">Preise *</h3>
+          <p class="text-left">
+            <b>Ganzjährig</b><br>
+            pro Nacht<br>
+            SEK 425 (3 Pers.)<br>
+            SEK 345 (2 Pers.)<br>
+            SEK 275 (1 Pers.)
+          </p>
+          <p class="text-left">
+            <b>Ganzjährig</b><br>
+            pro Nacht<br>
+            SEK 535<br>
+          </p>
+          <p class="text-left">
+            Für alle Stugor gilt:<br>
+            ab 1 Woche 10% Rabatt<br>
+            ab 2 Wochen 15% Rabatt<br>
+            ab 3 Wochen 20% Rabatt<br>
+          </p>
+          <p class="text-left">
+            * Inkl. Dusche.<br>
+            Optional Bettwäsche SEK 85 pro Pers.<br>
+            Optional Endreinigung SEK 152.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section-stellplaetze" class="unterkuenfte-section">
+  <img src="/images/icons/Caravan.png" />&nbsp;&nbsp;
+  <img src="/images/icons/Trailer.png" />&nbsp;&nbsp;
+  <img src="/images/icons/Tent.png" />
+  <h2>Stellplätze</h2>
+  <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-2 overlay gray">
+      <div class="pure-g">
+        <div class="pure-u-1-2 pure-u-md-1-2">
+          <h3 class="text-uppercase text-left">Details</h3>
+          <p class="text-left">
+            <b>84 Plätze</b><br>
+            für Wohnwagen, Wohn&shy;mobile oder Zelte
+          </p>
+          <p class="text-left">
+            29 Pätze ohne Strom<br>
+            55 Plätze mit Strom<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            &nbsp;<br>
+            Für alle 84 Plätze gilt:<br>
+            ab 1 Woche 10% Rabatt<br>
+            ab 2 Wochen 15% Rabatt<br>
+            ab 3 Wochen 20% Rabatt<br>
+            &nbsp;<br>
+            &nbsp;
+          </p>
+          <p class="text-left">
+            <b>Saisonplatz vom 1.04.-30.10.</b><br>
+            SEK 9'800 ohne Strom
+          </p>
+          <p class="text-left">
+            <b>Quickstop von 20.00-10.00 Uhr</b><br>
+            SEK 140 (2 Pers.) ohne Strom
+          </p>
+        </div>
+        <div class="pure-u-1-2 pure-u-md-1-2">
+          <h3 class="text-uppercase text-left">Preise *</h3>
+          <p class="text-left">
+            <b>01.04.-16.06.17 /<br>
+            11.08.-30.10.17</b><br>
+            pro Nacht<br>
+            SEK 195 (2 Pers.) ohne Strom<br>
+            SEK 255 (2 Pers.) mit Strom<br>
+            SEK 165 (2 Pers.) Zelt mit Bike/ Motorrad, ohne Strom
+          </p>
+          <p class="text-left">
+            <b>17.06.-20.08.17</b><br>
+            pro Nacht<br>
+            SEK 235 (2 Pers.) ohne Strom<br>
+            SEK 285 (2 Pers.) mit Strom<br>
+            SEK 175 (2 Pers.) Zelt mit Bike/ Motorrad, ohne Strom
+          </p>
+          <p class="text-left">
+            <b>Zusätzliche Person</b><br>
+            Erwachsene: SEK 40<br>
+            Kinder bis 17 J.: SEK 30<br>
+          </p>
+          <p class="text-left">
+            * Inkl. Dusche.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+      <a href="#modal-stellplaetze" rel="modal:open" onclick="$('.slick-unterkuenfte-stellplaetze-modal').slick('slickPlay');$('.slick-unterkuenfte-stellplaetze-modal').slick('slickNext');">
+        <div class="slick-unterkuenfte-stellplaetze" data-content="STELLPLÄTZE">
+          {% include slick-caroussel/unterkuenfte-stellplaetze.html %}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="section-preisliste" class="unterkuenfte-section">
+  <img src="/images/icons/Preisliste.png" />
+  <h2>Preisliste</h2>
+  <p class="text-center">Die detaillierte Preisübersicht können Sie hier herunterladen.</p>
+  <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-1 overlay gray">
+      <p><a href="/files/Preisliste-Soralgens-Camping.pdf" class="text-underline">Preisübersicht Saison 2017 (pdf)</a></p>
+    </div>
+  </div>
+</div>
+
+<p class="text-center" style="padding-top:2em;"><a href="/" style="color:gray;"><i class="fa fa-arrow-left" aria-hidden="true"></i> ZURÜCK</a></p>

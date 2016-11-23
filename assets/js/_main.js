@@ -5,6 +5,7 @@
 $(document).ready(function(){
 
   // Slick initialization
+  // home page
   $('.slick-home-campingplatz').slick({
     arrows: false,
     dots: true,
@@ -48,6 +49,46 @@ $(document).ready(function(){
     lazyLoad: 'ondemand',
   });
   $('.slick-home-gegend-modal').slick('slickPause');
+  // Unterkünfte page
+  $('.slick-unterkuenfte-ferienhaus').slick({
+    arrows: false,
+    dots: true,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-unterkuenfte-ferienhaus-modal').slick({
+    accessibility: true,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-unterkuenfte-stugor').slick({
+    arrows: false,
+    dots: true,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-unterkuenfte-stugor-modal').slick({
+    accessibility: true,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-unterkuenfte-stellplaetze').slick({
+    arrows: false,
+    dots: true,
+    lazyLoad: 'ondemand',
+  });
+  $('.slick-unterkuenfte-stellplaetze-modal').slick({
+    accessibility: true,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    lazyLoad: 'ondemand',
+  });
 
   // Sticky footer
   var bumpIt = function() {
