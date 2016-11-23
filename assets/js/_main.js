@@ -4,6 +4,17 @@
 
 $(document).ready(function(){
 
+  // Slick initialization
+  $('.slick-home-campingplatz').slick({
+    dots: true
+  });
+  $('.slick-home-infrastruktur').slick({
+    settingName: settingValue
+  });
+  $('.slick-home-gegend').slick({
+    settingName: settingValue
+  });
+
   // Sticky footer
   var bumpIt = function() {
       $('body').css('margin-bottom', $('.page__footer').outerHeight(true));
