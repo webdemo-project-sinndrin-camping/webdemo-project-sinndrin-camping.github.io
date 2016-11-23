@@ -33,6 +33,24 @@
   }
 }
 
+/* responsive-map-container according to https://blog.kulturbanause.de/2012/10/google-maps-im-responsive-webdesign/ */
+.responsive-map-container {
+  position: relative;
+  margin-bottom: 3em;
+  padding-bottom: 56%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 /*
    Masthead
    ========================================================================== */
