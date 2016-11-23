@@ -205,6 +205,67 @@
  .home-section {
    /* invert icons */
    .invert {-webkit-filter: invert(100%); filter: invert(100%);}
+
+   /* section impressionen */
+   &#section-impressionen {
+     .slick-home-campingplatz, .slick-home-infrastruktur, .slick-home-gegend {
+       /* Overlay on hover
+          Source: http://stackoverflow.com/a/18322705/3068252 */
+       &:after, &:before {
+          position: absolute;
+          opacity: 0;
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+        }
+       &:after {
+         content: '\A';
+         position: absolute;
+         width: 100%;
+         height:100%;
+         top:0; left:0;
+         background:#000;
+         background:rgba(0,0,0,0.6);
+         opacity: 0;
+         transition: all 1s;
+         -webkit-transition: all 1s;
+       }
+       &:before {
+          content: attr(data-content); // overlay content
+          width: 100%;
+          color: #fff;
+          z-index: 1;
+          bottom: 50%;
+          left: 0px;
+          text-align: center;
+        }
+        &:hover:after, &:hover:before {
+          opacity: 1;
+        }
+     }
+     /* margins on large screens */
+     .slick-home-campingplatz, .slick-home-infrastruktur {
+       @include breakpoint($medium) {
+         margin-right: 30px;
+       }
+     }
+     .slick-home-infrastruktur {
+       @include breakpoint($medium) {
+         margin-bottom: 0;
+       }
+     }
+     /* fill the slick caroussel in the outer container
+        Source: http://stackoverflow.com/questions/27684458/change-height-of-slick-carousel/39922788#39922788 */
+     .slick-home-gegend {
+       height: 100%;
+       img {
+         height: 100%;
+         object-fit: cover;
+       }
+      .slick-list, .slick-track {
+        height: 100%;
+      }
+     }
+   }
    &#section-campingplatz {
      background-image: url('/images/home/Section_Campingplatz_Boot.jpg');
    }

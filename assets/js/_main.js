@@ -6,13 +6,19 @@ $(document).ready(function(){
 
   // Slick initialization
   $('.slick-home-campingplatz').slick({
-    dots: true
+    arrows: false,
+    dots: true,
+    lazyLoad: 'ondemand',
   });
   $('.slick-home-infrastruktur').slick({
-    settingName: settingValue
+    arrows: false,
+    dots: true,
+    lazyLoad: 'ondemand',
   });
   $('.slick-home-gegend').slick({
-    settingName: settingValue
+    arrows: false,
+    dots: true,
+    lazyLoad: 'ondemand',
   });
 
   // Sticky footer
