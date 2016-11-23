@@ -14,7 +14,7 @@
   text-transform: lowercase;
 }
 .text-underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .text-size-7 {
   font-size: $type-size-7;
@@ -238,7 +238,7 @@
 /*
    Home Container
    ========================================================================== */
- .home-section, .campingplatz-section {
+ .home-section, .campingplatz-section, .aktivitaeten-section {
    /* invert icons */
    .invert {-webkit-filter: invert(100%); filter: invert(100%);}
 
@@ -327,6 +327,21 @@
      background-image: url('/images/campingplatz/Campingplatz_Standort_Detailbeschreibung.jpg');
    }
    /* end subsite campingplatz */
+
+   /* begin subsite aktivitäten */
+   &#section-wasser {
+     background-image: url('/images/aktivitaeten/Aktivitaeten_Wasser_Detailbeschreibung.jpg');
+   }
+   &#section-trekking {
+     background-image: url('/images/aktivitaeten/Aktivitaeten_Trekking_Detailbeschreibung.jpg');
+   }
+   &#section-geschichte {
+     background-image: url('/images/aktivitaeten/Aktivitaeten_Geschichte_Detailbeschreibung.jpg');
+   }
+   &#section-kultur {
+     background-image: url('/images/aktivitaeten/Aktivitaeten_Kultur_Detailbeschreibung.jpg');
+   }
+   /* end subsite aktivitäten */
 
    background-size: cover;
    text-align: center;
