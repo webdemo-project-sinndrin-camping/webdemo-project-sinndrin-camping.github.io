@@ -1,6 +1,6 @@
 {% include base_path %}
 
-<div class="masthead">
+<div class="masthead{% if page.url == '/' %} home{% endif %}">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
@@ -19,6 +19,7 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+    {% if page.url == '/' %}
     <div class="lang-selector">
       <ul class="blank-list-style text-uppercase text-center">
         <li>Välkommen</li>
@@ -27,5 +28,6 @@
         <li>Bonjour</li>
       </ul>
     </div>
+    {% endif %}
   </div>
 </div>

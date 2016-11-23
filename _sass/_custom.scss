@@ -42,7 +42,7 @@
   text-shadow: 1px 1px 0px #000;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
-.masthead {
+.masthead.home {
   border-bottom: 0;
   background-color: #d3d5d2;
   background-image: url('/images/home/HeaderBild_Soralgen.jpg');
@@ -99,16 +99,48 @@
       }
     }
   }
+  .greedy-nav {
+    background: 0;
+
+     .visible-links a {
+       @include masthead-text-color;
+
+       /* set hover styles */
+       &:hover {
+         color: $body-color;
+         @extend .text-underline;
+       }
+
+       &.btn-masthead {
+         /* extend btn-masthead Buchen with button classes */
+         @extend .btn;
+         @extend .btn--inverse;
+         @extend .text-uppercase;
+
+         text-decoration: none; /* remove white custom undline on hover from button */
+         font-size: $type-size-5; /* reset font size to masthead default */
+       }
+       /* remove gray default undline on hover from navigation entries */
+       &::before {
+             height: 0;
+       }
+     }
+
+     /* set styles on dropdown on small screens */
+     .hidden-links {
+       background: $gray;
+       border: 1px solid $dark-gray;
+     }
+  }
 }
 .greedy-nav {
   background: 0;
 
    .visible-links a {
-     @include masthead-text-color;
-
+     color: $text-color;
      /* set hover styles */
      &:hover {
-       color: $body-color;
+       color: $text-color;
        @extend .text-underline;
      }
 
@@ -118,6 +150,9 @@
        @extend .btn--inverse;
        @extend .text-uppercase;
 
+       color: $text-color !important;
+       font-weight: normal !important;
+       border: 1px solid $text-color !important;
        text-decoration: none; /* remove white custom undline on hover from button */
        font-size: $type-size-5; /* reset font size to masthead default */
      }
@@ -133,6 +168,7 @@
      border: 1px solid $dark-gray;
    }
 }
+
 
 /*
    purecss.io config
@@ -202,7 +238,7 @@
 /*
    Home Container
    ========================================================================== */
- .home-section {
+ .home-section, .campingplatz-section {
    /* invert icons */
    .invert {-webkit-filter: invert(100%); filter: invert(100%);}
 
@@ -276,6 +312,22 @@
    &#section-aktivitaeten {
      background-image: url('/images/home/Section_Aktivitaeten_Ausflug.jpg');
    }
+
+   /* begin subsite campingplatz */
+   &#section-infrastruktur {
+     background-image: url('/images/campingplatz/Campingplatz_Infrastruktur_Detailbeschreibung.jpg');
+   }
+   &#section-angebot {
+     background-image: url('/images/campingplatz/Campingplatz_Angebot_Detailbeschreibung.jpg');
+   }
+   &#section-oeffnungszeiten {
+     background-image: url('/images/campingplatz/Campingplatz_Oeffnungszeiten_Detailbeschreibung.jpg');
+   }
+   &#section-standort {
+     background-image: url('/images/campingplatz/Campingplatz_Standort_Detailbeschreibung.jpg');
+   }
+   /* end subsite campingplatz */
+
    background-size: cover;
    text-align: center;
 
@@ -311,7 +363,7 @@
      p {
        font-size: $type-size-7;
 
-       a {
+       a.cta-button {
          position: absolute;
          bottom: 2em;
          left: 0;
