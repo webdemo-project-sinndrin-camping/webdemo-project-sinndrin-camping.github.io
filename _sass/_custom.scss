@@ -57,8 +57,6 @@
 @mixin masthead-text-color {
   color: $weiss;
   font-weight: bold;
-  text-shadow: 1px 1px 0px #000;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 .masthead.home {
   font-size: 0.8em;
