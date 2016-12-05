@@ -137,7 +137,7 @@
          @extend .text-uppercase;
 
          text-decoration: none; /* remove white custom undline on hover from button */
-         font-size: $type-size-5; /* reset font size to masthead default */
+         font-size: 0.8em; /* reset font size to masthead default */
        }
        /* remove gray default undline on hover from navigation entries */
        &::before {
