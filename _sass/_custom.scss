@@ -88,6 +88,7 @@
   /* end resize container according to background image */
 
   .lang-selector {
+    font-size: $type-size-3;
 
     li {
       @include masthead-text-color;
