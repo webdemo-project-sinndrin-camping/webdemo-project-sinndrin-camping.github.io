@@ -136,8 +136,11 @@
          @extend .btn--inverse;
          @extend .text-uppercase;
 
-         text-decoration: none; /* remove white custom undline on hover from button */
-         font-size: 0.8em; /* reset font size to masthead default */
+         padding: 0.5em 1.5em;
+
+         text-decoration: none !important; /* remove white custom undline on hover from button */
+         font-weight: bold !important;
+         font-size: $type-size-5; /* reset font size to masthead default */
        }
        /* remove gray default undline on hover from navigation entries */
        &::before {
