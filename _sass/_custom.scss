@@ -228,9 +228,15 @@
      text-decoration: underline;
    }
 
+   h2 {
+     font-weight: normal;
+     margin-top: 1em;
+   }
+
    /* center columns */
    .pure-u-1 {
      text-align: center;
+     font-size: $type-size-6;
    }
 
    /* Social Media Icons */
