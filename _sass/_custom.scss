@@ -56,7 +56,21 @@
    ========================================================================== */
 @mixin masthead-text-color {
   color: $weiss;
-  font-weight: bold;
+}
+@mixin btn-masthead-mixin {
+  /* extend btn-masthead Buchen with button classes */
+  @extend .btn;
+  @extend .btn--inverse;
+  @extend .text-uppercase;
+
+  padding: 0.5em 1.5em;
+
+  text-decoration: none !important; /* remove white custom undline on hover from button */
+  font-weight: normal !important;
+  font-size: $type-size-5; /* reset font size to masthead default */
+}
+.masthead {
+  font-size: 0.8em;
 }
 .masthead.home {
   font-size: 0.8em;
@@ -87,6 +101,7 @@
 
   .lang-selector {
     font-size: $type-size-3;
+    font-weight: bold !important;
 
     li {
       @include masthead-text-color;
@@ -131,16 +146,7 @@
        }
 
        &.btn-masthead {
-         /* extend btn-masthead Buchen with button classes */
-         @extend .btn;
-         @extend .btn--inverse;
-         @extend .text-uppercase;
-
-         padding: 0.5em 1.5em;
-
-         text-decoration: none !important; /* remove white custom undline on hover from button */
-         font-weight: bold !important;
-         font-size: $type-size-5; /* reset font size to masthead default */
+         @include btn-masthead-mixin;
        }
        /* remove gray default undline on hover from navigation entries */
        &::before {
@@ -167,16 +173,10 @@
      }
 
      &.btn-masthead {
-       /* extend btn-masthead Buchen with button classes */
-       @extend .btn;
-       @extend .btn--inverse;
-       @extend .text-uppercase;
+       @include btn-masthead-mixin;
 
        color: $text-color !important;
-       font-weight: normal !important;
        border: 1px solid $text-color !important;
-       text-decoration: none; /* remove white custom undline on hover from button */
-       font-size: $type-size-5; /* reset font size to masthead default */
      }
      /* remove gray default undline on hover from navigation entries */
      &::before {
