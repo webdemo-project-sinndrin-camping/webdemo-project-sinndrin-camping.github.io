@@ -10,32 +10,6 @@ permalink: /unterkuenfte/
 
 <p class="text-center">Wir bieten verschiedene Un&shy;ter&shy;kunfts&shy;mög&shy;lich&shy;kei&shy;ten an.</p>
 
-<!-- Modal HTML embedded directly into document -->
-<div class="modal-unterkuenfte" id="modal-ferienhaus" style="display:none;">
-  <h1 class="text-center text-uppercase">Ferienhaus Impressionen</h1>
-  <p class="text-center">Lass dich von unserem idyllisch gelegenen Campingplatz bezaubern.</p>
-
-  <div class="slick-unterkuenfte-ferienhaus-modal">
-    {% include slick-caroussel/unterkuenfte-ferienhaus.html %}
-  </div>
-</div>
-<div class="modal-unterkuenfte" id="modal-stugor" style="display:none;">
-  <h1 class="text-center text-uppercase">Stugor Impressionen</h1>
-  <p class="text-center">Lass dich von unserem idyllisch gelegenen Campingplatz bezaubern.</p>
-
-  <div class="slick-unterkuenfte-stugor-modal">
-    {% include slick-caroussel/unterkuenfte-stugor.html %}
-  </div>
-</div>
-<div class="modal-unterkuenfte" id="modal-stellplaetze" style="display:none;">
-  <h1 class="text-center text-uppercase">Stellplätze Impressionen</h1>
-  <p class="text-center">Lass dich von unserem idyllisch gelegenen Campingplatz bezaubern.</p>
-
-  <div class="slick-unterkuenfte-stellplaetze-modal">
-    {% include slick-caroussel/unterkuenfte-stellplaetze.html %}
-  </div>
-</div>
-
 <div id="section-ferienhaus" class="unterkuenfte-section">
   <img src="/images/icons/Haus.png" />&nbsp;&nbsp;
   <img src="/images/icons/Tree-black.png" />
@@ -84,11 +58,9 @@ permalink: /unterkuenfte/
       </div>
     </div>
     <div class="pure-u-1 pure-u-md-1-2">
-      <a href="#modal-ferienhaus" rel="modal:open" onclick="$('.slick-unterkuenfte-ferienhaus-modal').slick('slickPlay');$('.slick-unterkuenfte-ferienhaus-modal').slick('slickNext');">
         <div class="slick-unterkuenfte-ferienhaus" data-content="FERIENHAUS">
           {% include slick-caroussel/unterkuenfte-ferienhaus.html %}
         </div>
-      </a>
     </div>
   </div>
 </div>
@@ -98,11 +70,9 @@ permalink: /unterkuenfte/
   <h2>Stugor</h2>
   <div class="pure-g">
     <div class="pure-u-1 pure-u-md-1-2">
-      <a href="#modal-stugor" rel="modal:open" onclick="$('.slick-unterkuenfte-stugor-modal').slick('slickPlay');$('.slick-unterkuenfte-stugor-modal').slick('slickNext');">
         <div class="slick-unterkuenfte-stugor" data-content="STUGOR">
           {% include slick-caroussel/unterkuenfte-stugor.html %}
         </div>
-      </a>
     </div>
     <div class="pure-u-1 pure-u-md-1-2 overlay gray">
       <div class="pure-g">
@@ -217,11 +187,9 @@ permalink: /unterkuenfte/
       </div>
     </div>
     <div class="pure-u-1 pure-u-md-1-2">
-      <a href="#modal-stellplaetze" rel="modal:open" onclick="$('.slick-unterkuenfte-stellplaetze-modal').slick('slickPlay');$('.slick-unterkuenfte-stellplaetze-modal').slick('slickNext');">
         <div class="slick-unterkuenfte-stellplaetze" data-content="STELLPLÄTZE">
           {% include slick-caroussel/unterkuenfte-stellplaetze.html %}
         </div>
-      </a>
     </div>
   </div>
 </div>
