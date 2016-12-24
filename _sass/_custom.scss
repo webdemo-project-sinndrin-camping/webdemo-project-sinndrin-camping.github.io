@@ -270,6 +270,17 @@
     margin-top: 5em;
   }
 
+  .aktivitaeten-section {
+    h2 {
+      margin-top: 0.5em;
+      margin-bottom: 0;
+      padding-bottom: 0.5em;
+    }
+    h3 {
+      margin-top: 0.5em;
+    }
+  }
+
  .home-section, .campingplatz-section, .unterkuenfte-section, .aktivitaeten-section {
    /* invert icons */
    .invert {-webkit-filter: invert(100%); filter: invert(100%);}
