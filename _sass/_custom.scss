@@ -206,6 +206,34 @@
    }
 }
 
+/*
+   full width div
+   Source: https://css-tricks.com/full-width-containers-limited-width-parents/#article-header-id-6
+   ========================================================================== */
+ /* fix vertical scrollbar width makes horizontal scrollbar
+ to appear. source: http://stackoverflow.com/a/36073625 */
+ body {
+   overflow-x: hidden;
+ }
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 1px;
+}
+.max-width-aligned {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-right: 23px;
+  padding-left: 23px;
+  @include breakpoint($medium) {
+    padding-right: 0;
+  }
+}
+
 
 /*
    purecss.io config
