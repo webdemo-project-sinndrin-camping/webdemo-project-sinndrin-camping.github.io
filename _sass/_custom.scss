@@ -52,6 +52,20 @@
 
 
 /*
+   Modal jquerymodal
+   ========================================================================== */
+#modal-campingplatz, #modal-infrastruktur, #modal-gegend {
+  position: relative;
+}
+.btn-close-modal {
+  position: absolute;
+  padding-top: 20px;
+  right: 20px;
+  z-index: 500;
+}
+
+
+/*
    Masthead
    ========================================================================== */
 @mixin masthead-text-color {
