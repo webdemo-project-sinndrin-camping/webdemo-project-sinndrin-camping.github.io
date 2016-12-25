@@ -20,6 +20,15 @@
   font-size: $type-size-7;
 }
 
+/* general font size */
+.page__content p, .page__content li, .page__content dl {
+  font-size: 0.9em;
+}
+
+h1 {
+  margin-top: 2em !important;
+}
+
 /*
    Lists
    ========================================================================== */
